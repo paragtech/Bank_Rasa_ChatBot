@@ -1,0 +1,22 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- details
+responses:
+  utter_greet:
+  - text: Welcome to ABC Bank Loan Recommendations system
+  utter_goodbye:
+  - text: Bye, Have a great day!
+  utter_details:
+  - text: Please enter the Gender, Age and Balance
+  utter_group:
+  - text: Congratultions you are in {group} group.
+actions:
+- utter_greet
+- utter_goodbye
+- utter_details
+- utter_group
+- action_group
